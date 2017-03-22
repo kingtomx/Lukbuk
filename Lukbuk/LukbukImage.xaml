@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Lukbuk.LukbukImage">
+	<ContentView.Content>
+		<Grid
+			Margin="5"
+			BackgroundColor="Black">
+			<RelativeLayout>
+				<Image 
+					x:Name="actualImage"
+					BackgroundColor="Black"
+					Margin="4"
+					Source="1.jpg"
+					HorizontalOptions="Center" />
+				<Button 
+					Image="like1.png"
+					VerticalOptions="EndAndExpand"
+					BackgroundColor="#aacccccc"
+					WidthRequest="50"
+					RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=actualImage, Property=Width, Constant=-50}"
+					RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=actualImage, Property=Height, Constant=-45}" />
+				<Button 
+					Image="visit.png" 
+					VerticalOptions="EndAndExpand"
+					BackgroundColor="#aacccccc"
+					WidthRequest="50"
+					RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=actualImage, Property=X, Constant=5}"
+					RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=actualImage, Property=Height, Constant=-45}" />
+			</RelativeLayout>
+		</Grid>
+	</ContentView.Content>
+</ContentView>
