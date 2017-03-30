@@ -12,8 +12,7 @@ namespace Lukbuk
 
 		protected override void OnAppearing()
 		{
-			App.Current.MainPage = new NavigationPage();
-			App.Current.MainPage.Navigation.PushAsync(new LukbukPageList());
+			App.Current.MainPage = new NavigationPage(new LukbukPageList());
 		}
 
 	}

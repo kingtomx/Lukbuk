@@ -4,17 +4,16 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 	x:Class="Lukbuk.LukbukImage" 
 	xmlns:local="clr-namespace:Lukbuk;assembly=Lukbuk">
-	<ContentView.Content>
-		<Grid
-			Margin="5"
-			BackgroundColor="Black">
+	<StackLayout
+			BackgroundColor="Maroon">
 			<RelativeLayout>
 				<Image 
 					x:Name="actualImage"
 					BackgroundColor="Black"
 					Margin="4"
 					Source="1.jpg"
-					HorizontalOptions="Center" />
+					HorizontalOptions="CenterAndExpand" 
+					VerticalOptions="CenterAndExpand" />
 				<Button 
 					Image="like1.png"
 					VerticalOptions="EndAndExpand"
@@ -30,6 +29,5 @@
 					RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=actualImage, Property=X, Constant=5}"
 					RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=actualImage, Property=Height, Constant=-45}" />
 			</RelativeLayout>
-		</Grid>
-	</ContentView.Content>
+	</StackLayout>
 </ContentView>
