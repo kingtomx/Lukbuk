@@ -5,8 +5,9 @@
 	x:Class="Lukbuk.LukbukImage" 
 	xmlns:local="clr-namespace:Lukbuk;assembly=Lukbuk">
 	<StackLayout
-			BackgroundColor="Maroon">
-			<RelativeLayout>
+			BackgroundColor="White"
+			Spacing="0">
+			<!-- <RelativeLayout> -->
 				<Image 
 					x:Name="actualImage"
 					BackgroundColor="Black"
@@ -14,20 +15,28 @@
 					Source="1.jpg"
 					HorizontalOptions="CenterAndExpand" 
 					VerticalOptions="CenterAndExpand" />
-				<Button 
-					Image="like1.png"
-					VerticalOptions="EndAndExpand"
-					BackgroundColor="#aacccccc"
-					WidthRequest="50"
-					RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=actualImage, Property=Width, Constant=-50}"
-					RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=actualImage, Property=Height, Constant=-45}" />
-				<Button 
-					Image="visit.png" 
-					VerticalOptions="EndAndExpand"
-					BackgroundColor="#aacccccc"
-					WidthRequest="50"
-					RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=actualImage, Property=X, Constant=5}"
-					RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=actualImage, Property=Height, Constant=-45}" />
-			</RelativeLayout>
+				<StackLayout 
+					TranslationY="-80"
+					Margin="10"
+					Orientation="Horizontal"
+					HorizontalOptions="FillAndExpand">
+					<Button 
+						Image="like1.png"
+						VerticalOptions="EndAndExpand"
+						HorizontalOptions="FillAndExpand"
+						BackgroundColor="#aacccccc"
+						WidthRequest="50"
+						RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=actualImage, Property=Width, Constant=-50}"
+						RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=actualImage, Property=Height, Constant=-45}" />
+					<Button 
+						Image="visit.png" 
+						VerticalOptions="EndAndExpand"
+						HorizontalOptions="FillAndExpand"
+						BackgroundColor="#aacccccc"
+						WidthRequest="50"
+						RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=actualImage, Property=X, Constant=5}"
+						RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=actualImage, Property=Height, Constant=-45}" />
+				</StackLayout>
+			<!--</RelativeLayout>-->
 	</StackLayout>
 </ContentView>

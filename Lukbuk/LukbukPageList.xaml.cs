@@ -14,6 +14,7 @@ namespace Lukbuk
 			StackLayout content = new StackLayout()
 			{
 				Orientation = StackOrientation.Vertical,
+				VerticalOptions = LayoutOptions.FillAndExpand,
 				Spacing = 50,
 				Children = {
 					new LukbukImage() {},
