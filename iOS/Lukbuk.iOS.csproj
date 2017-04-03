@@ -166,6 +166,8 @@
     <BundleResource Include="Resources\www1.png" />
     <BundleResource Include="Resources\like1.png" />
     <BundleResource Include="Resources\contest1.png" />
+    <BundleResource Include="Resources\share.png" />
+    <BundleResource Include="Resources\list1.png" />
   </ItemGroup>
   <Import Project="..\Lukbuk\Lukbuk.projitems" Label="Shared" Condition="Exists('..\Lukbuk\Lukbuk.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
