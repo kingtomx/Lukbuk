@@ -43,7 +43,7 @@
 					Orientation="Horizontal"
 					HorizontalOptions="FillAndExpand">
 					<Button 
-						Image="like1.png"
+						Image="share.png"
 						VerticalOptions="EndAndExpand"
 						HorizontalOptions="FillAndExpand"
 						BackgroundColor="#aadddddd"
@@ -58,7 +58,15 @@
 						WidthRequest="50"
 						RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=actualImage, Property=X, Constant=5}"
 						RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=actualImage, Property=Height, Constant=-45}" />
-				</StackLayout>
+					<Button 
+						Image="list1.png" 
+						VerticalOptions="EndAndExpand"
+						HorizontalOptions="FillAndExpand"
+						BackgroundColor="#aadddddd"
+						WidthRequest="50"
+						RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=actualImage, Property=X, Constant=5}"
+						RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=actualImage, Property=Height, Constant=-45}" />
+		</StackLayout>
 			<!--</RelativeLayout>-->
 	</StackLayout>
 </ContentView>

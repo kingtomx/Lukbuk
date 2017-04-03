@@ -43,7 +43,7 @@
 					Orientation="Horizontal"
 					HorizontalOptions="FillAndExpand">
 					<Button 
-						Image="like1.png"
+						Image="share.png"
 						VerticalOptions="EndAndExpand"
 						HorizontalOptions="FillAndExpand"
 						BackgroundColor="#aadddddd"
@@ -51,7 +51,7 @@
 						RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=actualImage, Property=Width, Constant=-50}"
 						RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=actualImage, Property=Height, Constant=-45}" />
 					<Button 
-						Image="buy1.png"
+						Image="www1.png"
 						VerticalOptions="EndAndExpand"
 						HorizontalOptions="FillAndExpand"
 						BackgroundColor="#aadddddd"
@@ -59,7 +59,7 @@
 						RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=actualImage, Property=Width, Constant=-50}"
 						RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=actualImage, Property=Height, Constant=-45}" />
 					<Button 
-						Image="www1.png" 
+						Image="buy1.png" 
 						VerticalOptions="EndAndExpand"
 						HorizontalOptions="FillAndExpand"
 						BackgroundColor="#aadddddd"
