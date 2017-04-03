@@ -19,16 +19,16 @@ namespace Lukbuk
 				VerticalOptions = LayoutOptions.FillAndExpand,
 				Spacing = 0,
 				Children = {
-					new LukbukImage("lb1.jpg") {},
-					new LukbukImage("lb2.jpg") {},
-					new LukbukImage("lb3.jpg") {},
-					new LukbukImage("lb4.jpg") {},
-					new LukbukImage("1.jpg") {},
-					new LukbukImage("2.jpg") {},
-					new LukbukImage("3.jpg") {},
-					new LukbukImage("1.jpg") {},
-					new LukbukImage("2.jpg") {},
-					new LukbukImage("3.jpg") {}
+					new LukbukImageSpecial("lb1.jpg", "Chocolate") {},
+					new LukbukImage("lb2.jpg", "Kosiuko") {},
+					new LukbukImage("lb3.jpg", "Rapsodia") {},
+					new LukbukConcurso("lb4.jpg", "texto4") {},
+					new LukbukImage("1.jpg", "texto5") {},
+					new LukbukImage("2.jpg", "") {},
+					new LukbukImageSpecial("3.jpg", "") {},
+					new LukbukImage("1.jpg", "") {},
+					new LukbukImage("2.jpg", "") {},
+					new LukbukImage("3.jpg", "") {}
 				}
 			};
 

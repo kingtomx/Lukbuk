@@ -2,7 +2,7 @@
 <ContentView 
 	xmlns="http://xamarin.com/schemas/2014/forms" 
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-	x:Class="Lukbuk.LukbukImage" 
+	x:Class="Lukbuk.LukbukImageSpecial" 
 	xmlns:local="clr-namespace:Lukbuk;assembly=Lukbuk">
 	<StackLayout
 			Margin="0, 10, 0, 0"
@@ -26,16 +26,16 @@
 			    		<PinchGestureRecognizer PinchUpdated="OnPinchUpdated" />
 						<TapGestureRecognizer
 			                Tapped="OnTapGestureRecognizerTapped"
-			                NumberOfTapsRequired="1" />
+			                NumberOfTapsRequired="1" />			
 			  		</Image.GestureRecognizers>
 				<Label 
 					x:Name="myDescription"
 					Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus laoreet, risus non dictum egestas, ligula ex molestie dui, nec sodales dui elit vel enim"
 					HorizontalTextAlignment="Start"
 					HorizontalOptions="FillAndExpand"
-					Margin="10, 4, 4, 4"	
+					Margin="10, 4, 4, 4"
 					FontSize="Small"
-					FontFamily="HelveticaNeue"		
+					FontFamily="HelveticaNeue"
 			 		IsVisible="false" />		
 				<StackLayout 
 					TranslationY="0"
@@ -44,6 +44,14 @@
 					HorizontalOptions="FillAndExpand">
 					<Button 
 						Image="like1.png"
+						VerticalOptions="EndAndExpand"
+						HorizontalOptions="FillAndExpand"
+						BackgroundColor="#aadddddd"
+						WidthRequest="50"
+						RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=actualImage, Property=Width, Constant=-50}"
+						RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=actualImage, Property=Height, Constant=-45}" />
+					<Button 
+						Image="buy1.png"
 						VerticalOptions="EndAndExpand"
 						HorizontalOptions="FillAndExpand"
 						BackgroundColor="#aadddddd"

@@ -4,19 +4,20 @@ using Xamarin.Forms;
 
 namespace Lukbuk
 {
-	public partial class LukbukImage : ContentView
+	public partial class LukbukImageSpecial : ContentView
 	{
+
 		Image myImage = null;
 		Label description = null;
 		Label title = null;
 
-		public LukbukImage()
+		public LukbukImageSpecial()
 		{
 		}
 
-		public LukbukImage(String image, String brand)
+		public LukbukImageSpecial(String image, String brand)
 		{
-			InitializeComponent();
+			InitializeComponent();	
 			title = this.FindByName<Label>("Name");
 			title.Text = brand;
 			myImage = this.FindByName<Image>("actualImage");
@@ -29,8 +30,8 @@ namespace Lukbuk
 		{
 		}
 
-
-		void OnTapGestureRecognizerTapped(object sender, EventArgs args) {
+		void OnTapGestureRecognizerTapped(object sender, EventArgs args)
+		{
 			if (description.IsVisible)
 			{
 				description.IsVisible = false;
@@ -40,5 +41,6 @@ namespace Lukbuk
 				description.IsVisible = true;
 			}
 		}
+
 	}
 }

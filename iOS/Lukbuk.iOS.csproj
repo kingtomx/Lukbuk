@@ -153,7 +153,6 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\default.jpg" />
-    <BundleResource Include="Resources\like1.png" />
     <BundleResource Include="Resources\visit.png" />
     <BundleResource Include="Resources\1.jpg" />
     <BundleResource Include="Resources\2.jpg" />
@@ -163,6 +162,10 @@
     <BundleResource Include="Resources\lb3.jpg" />
     <BundleResource Include="Resources\lb4.jpg" />
     <BundleResource Include="Resources\logo.png" />
+    <BundleResource Include="Resources\buy1.png" />
+    <BundleResource Include="Resources\www1.png" />
+    <BundleResource Include="Resources\like1.png" />
+    <BundleResource Include="Resources\contest1.png" />
   </ItemGroup>
   <Import Project="..\Lukbuk\Lukbuk.projitems" Label="Shared" Condition="Exists('..\Lukbuk\Lukbuk.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
