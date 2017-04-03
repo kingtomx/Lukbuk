@@ -12,11 +12,10 @@
 					x:Name="actualImage"
 					BackgroundColor="Black"
 					Margin="4"
-					Source="1.jpg"
 					HorizontalOptions="CenterAndExpand" 
 					VerticalOptions="CenterAndExpand" />
 				<StackLayout 
-					TranslationY="-80"
+					TranslationY="0"
 					Margin="10"
 					Orientation="Horizontal"
 					HorizontalOptions="FillAndExpand">
@@ -24,7 +23,7 @@
 						Image="like1.png"
 						VerticalOptions="EndAndExpand"
 						HorizontalOptions="FillAndExpand"
-						BackgroundColor="#aacccccc"
+						BackgroundColor="#aadddddd"
 						WidthRequest="50"
 						RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=actualImage, Property=Width, Constant=-50}"
 						RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=actualImage, Property=Height, Constant=-45}" />
@@ -32,7 +31,7 @@
 						Image="visit.png" 
 						VerticalOptions="EndAndExpand"
 						HorizontalOptions="FillAndExpand"
-						BackgroundColor="#aacccccc"
+						BackgroundColor="#aadddddd"
 						WidthRequest="50"
 						RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=actualImage, Property=X, Constant=5}"
 						RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=actualImage, Property=Height, Constant=-45}" />

@@ -15,24 +15,18 @@ namespace Lukbuk
 			{
 				Orientation = StackOrientation.Vertical,
 				VerticalOptions = LayoutOptions.FillAndExpand,
-				Spacing = 50,
+				Spacing = 0,
 				Children = {
-					new LukbukImage() {},
-					new LukbukImage() {},
-					new LukbukImage() {},
-					new LukbukImage() {},
-					new LukbukImage() {},
-					new LukbukImage() {},
-					new LukbukImage() {},
-					new LukbukImage() {},
-					new LukbukImage() {},
-					new LukbukImage() {},
-					new LukbukImage() {},
-					new LukbukImage() {},
-					new LukbukImage() {},
-					new LukbukImage() {},
-					new LukbukImage() {},
-					new LukbukImage() {}
+					new LukbukImage("lb1.jpg") {},
+					new LukbukImage("lb2.jpg") {},
+					new LukbukImage("lb3.jpg") {},
+					new LukbukImage("lb4.jpg") {},
+					new LukbukImage("1.jpg") {},
+					new LukbukImage("2.jpg") {},
+					new LukbukImage("3.jpg") {},
+					new LukbukImage("1.jpg") {},
+					new LukbukImage("2.jpg") {},
+					new LukbukImage("3.jpg") {}
 				}
 			};
 
