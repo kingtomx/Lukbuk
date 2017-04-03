@@ -14,9 +14,12 @@
 					Margin="4"
 					HorizontalOptions="CenterAndExpand" 
 					VerticalOptions="CenterAndExpand" />
+					<Image.GestureRecognizers>
+			    		<PinchGestureRecognizer PinchUpdated="OnPinchUpdated" />
+			  		</Image.GestureRecognizers>
 				<StackLayout 
 					TranslationY="0"
-					Margin="10"
+					Margin="4"
 					Orientation="Horizontal"
 					HorizontalOptions="FillAndExpand">
 					<Button 

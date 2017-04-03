@@ -11,6 +11,8 @@ namespace Lukbuk
 		{
 			InitializeComponent();
 
+			NavigationPage.SetTitleIcon(this, "logo.png");
+
 			StackLayout content = new StackLayout()
 			{
 				Orientation = StackOrientation.Vertical,
