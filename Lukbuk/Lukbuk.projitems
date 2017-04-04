@@ -38,13 +38,15 @@
       <DependentUpon>LukbukImage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Internet\FeedController.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Internet\Feed.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Internet\ImageGeneric.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)LukbukImageSpecial.xaml.cs">
       <DependentUpon>LukbukImageSpecial.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)LukbukConcurso.xaml.cs">
       <DependentUpon>LukbukConcurso.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Internet\ImageSpecial.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Internet\ImageConcurso.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Internet\" />

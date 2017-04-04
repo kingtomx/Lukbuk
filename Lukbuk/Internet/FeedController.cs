@@ -13,25 +13,32 @@ namespace Cultivo
 {
 	public class FeedController
 	{
-		private string url = "https://api.instagram.com/v1/users/self/media/recent/?access_token=1097017695.1677ed0.8c7090e475284d87be8600a669b31859";
+		private string url = "http://127.0.0.1/out.json";
 
 		public async Task<IEnumerable> Get()
 		{
 			List<Feed> feeds = new List<Feed>();
 
-			String instagram = await url.GetStringAsync();
+			String feed = await url.GetStringAsync();
 
-			JObject jobject = JObject.Parse(instagram);
+			JObject jobject = JObject.Parse(feed);
 
-			JArray data = (JArray)jobject["data"];
+			JArray elements = (JArray)jobject["elements"];
 
 
-			foreach (var item in data.Children())
+			foreach (var item in elements.Children())
 			{
-				Feed feed = new Feed();
+				if (item["type"].Equals("lukbukimage"))
+				{
+					ImageGeneric image = new ImageGeneric()
+					{
+						type = "lukbukimage",
+						image = item["image"],
 
-				feed.Image = item["images"]["standard_resolution"]["url"].ToString();
-				feeds.Add(feed);
+					}
+					feed.Image = item["images"]["standard_resolution"]["url"].ToString();
+					feeds.Add(feed);
+				}
 			}
 
 			return feeds;
