@@ -19,7 +19,7 @@ namespace Lukbuk
 
 		protected override async void OnAppearing()
 		{
-			IEnumerable response = await Internet.FeedController.Get("http://127.0.0.1/out.json");
+			IEnumerable response = await Internet.FeedController.Get("https://raw.githubusercontent.com/kingtomx/Lukbuk/master/out.json");
 			App.Current.MainPage = new NavigationPage(new LukbukPageList((List<JToken>)response));
 		}
 
