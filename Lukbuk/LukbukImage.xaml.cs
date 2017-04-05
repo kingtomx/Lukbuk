@@ -14,7 +14,7 @@ namespace Lukbuk
 		{
 		}
 
-		public LukbukImage(string image, string brand, string imagedescription)
+		public LukbukImage(string image, string brand, string imagedescription, string url)
 		{
 			InitializeComponent();
 			title = this.FindByName<Label>("Name");
@@ -24,6 +24,11 @@ namespace Lukbuk
 			description = this.FindByName<Label>("myDescription");
 			description.Text = imagedescription;
 
+			Button www = this.FindByName<Button>("www");
+			www.Clicked += (sender, e) =>
+			{
+				Device.OpenUri(new Uri(url));
+			};
 		}
 
 		void OnPinchUpdated(object sender, PinchGestureUpdatedEventArgs e)

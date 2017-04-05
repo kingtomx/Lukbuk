@@ -32,7 +32,7 @@ namespace Lukbuk
 
 				if (type == "lukbukimage")
 				{
-					content.Children.Add(new LukbukImage((string)item["image"], (string)item["title"], (string)item["description"]));
+					content.Children.Add(new LukbukImage((string)item["image"], (string)item["title"], (string)item["description"], (string)item["url"]["general"]));
 				}
 				else if (type == "lukbukimagespecial")
 				{

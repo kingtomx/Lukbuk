@@ -51,6 +51,7 @@
 						RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=actualImage, Property=Width, Constant=-50}"
 						RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=actualImage, Property=Height, Constant=-45}" />
 					<Button 
+						x:Name="www"
 						Image="www1.png" 
 						VerticalOptions="EndAndExpand"
 						HorizontalOptions="FillAndExpand"
