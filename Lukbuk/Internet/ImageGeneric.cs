@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Cultivo
+namespace Lukbuk.Internet
 {
 public class ImageGeneric
 	{

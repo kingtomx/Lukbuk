@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 using Xamarin.Forms;
 
@@ -9,6 +11,10 @@ namespace Lukbuk
 	{
 		public LukbukPageList()
 		{
+		}
+
+		public LukbukPageList(List<JToken> elements)
+		{
 			InitializeComponent();
 
 			NavigationPage.SetTitleIcon(this, "logo.png");
@@ -17,20 +23,23 @@ namespace Lukbuk
 			{
 				Orientation = StackOrientation.Vertical,
 				VerticalOptions = LayoutOptions.FillAndExpand,
-				Spacing = 0,
-				Children = {
-					new LukbukImageSpecial("lb1.jpg", "Chocolate") {},
-					new LukbukImage("lb2.jpg", "Kosiuko") {},
-					new LukbukImage("lb3.jpg", "Rapsodia") {},
-					new LukbukConcurso("lb4.jpg", "texto4") {},
-					new LukbukImage("1.jpg", "texto5") {},
-					new LukbukImage("2.jpg", "") {},
-					new LukbukImageSpecial("3.jpg", "") {},
-					new LukbukImage("1.jpg", "") {},
-					new LukbukImage("2.jpg", "") {},
-					new LukbukImage("3.jpg", "") {}
-				}
+				Spacing = 0
 			};
+			foreach (JToken item in elements)
+			{
+				if (item["type"].Equals("lukbukimage"))
+				{
+					content.Children.Add(new LukbukImage());
+				}
+				else if (item["type"].Equals("lukbukimagespecial"))
+				{
+					content.Children.Add(new LukbukImageSpecial());
+				}
+				else
+				{
+					content.Children.Add(new LukbukConcurso());
+				}
+			}
 
 			ScrollView myScroll = this.FindByName<ScrollView>("myScroll");
 			myScroll.Content = content;

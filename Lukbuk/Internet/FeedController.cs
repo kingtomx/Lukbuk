@@ -9,15 +9,14 @@ using System.Threading.Tasks;
 using Flurl;
 using Flurl.Http;
 
-namespace Cultivo
+namespace Lukbuk.Internet
 {
 	public class FeedController
 	{
-		private string url = "http://127.0.0.1/out.json";
-
-		public async Task<IEnumerable> Get()
+		
+		public static async Task<IEnumerable> Get(string url)
 		{
-			List<Feed> feeds = new List<Feed>();
+			List<JToken> objects = new List<JToken>();
 
 			String feed = await url.GetStringAsync();
 
@@ -25,23 +24,22 @@ namespace Cultivo
 
 			JArray elements = (JArray)jobject["elements"];
 
-
 			foreach (var item in elements.Children())
 			{
-				if (item["type"].Equals("lukbukimage"))
-				{
-					ImageGeneric image = new ImageGeneric()
-					{
-						type = "lukbukimage",
-						image = item["image"],
-
-					}
-					feed.Image = item["images"]["standard_resolution"]["url"].ToString();
-					feeds.Add(feed);
-				}
+				objects.Add(item);
 			}
 
-			return feeds;
+			return objects;
 		}
+
+		public static async Task<byte[]> GetImage(string url)
+		{
+			List<JToken> objects = new List<JToken>();
+
+			byte[] image = await url.GetBytesAsync();
+
+			return image;
+		}
+
 	}
 }
