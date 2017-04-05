@@ -28,6 +28,13 @@ namespace Lukbuk
 			www.Clicked += (sender, e) =>
 			{
 				Device.OpenUri(new Uri(url));
+				Color colorActual = ((Button)sender).BackgroundColor;
+				((Button)sender).BackgroundColor = Color.FromHex("#aabbbbbb");
+				Device.StartTimer(TimeSpan.FromSeconds(0.25), () =>
+				{
+					((Button)sender).BackgroundColor = colorActual;
+					return false;
+				});
 			};
 		}
 
