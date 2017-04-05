@@ -6,7 +6,7 @@
     "elements": [
         {
             "type": "lukbukimage",
-            "image": "http://www.interxion.com/globalassets/global/whats-new/es_http_picture.jpg",
+            "image": "http://www.rapsodia.com.ar/media/catalog/product/cache/58/image/950x1425/9df78eab33525d08d6e5fb8d27136e95/r/a/rapsodiaar_00503618827c_05_872.jpg",
             "title": "title of image",
             "description": "description of image",
             "url": {
@@ -24,7 +24,7 @@
         },
         {
             "type": "lukbukimagespecial",
-            "image": "http://www.interxion.com/globalassets/global/whats-new/es_http_picture.jpg",
+            "image": "http://3.bp.blogspot.com/-ad514gir_Mo/T6AxxbSAh9I/AAAAAAAA7Ik/u7C4jo1Q810/s1600/0.jpg",
             "title": "title of image",
             "description": "description of image",
             "url": "http://www.elpais.com",
@@ -32,7 +32,7 @@
         },       
         {
             "type": "lukbukconcurso",
-            "image": "http://www.interxion.com/globalassets/global/whats-new/es_http_picture.jpg",
+            "image": "http://4.bp.blogspot.com/-dK8oYKEj42E/Vb_k9tkyuUI/AAAAAAAAZfQ/EOZEXHeOMCM/s1600/11828787_10153530295652156_7931306924229478787_n.jpg",
             "title": "title of image",
             "description": "description of image",
             "url": "http://clarin.com.ar",
