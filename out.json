@@ -1,0 +1,42 @@
+{
+
+    "version": "1.0",
+    "datetime": "1491312636",
+    "api": "lukbukfeed",
+    "elements": [
+        {
+            "type": "lukbukimage",
+            "image": "http://www.interxion.com/globalassets/global/whats-new/es_http_picture.jpg",
+            "title": "title of image",
+            "description": "description of image",
+            "url": {
+                "general": "https://www.google.com",
+                "items": [
+                    {
+                        "name": "name of the item",
+                        "price": "price of the item",
+                        "currency": "currency of the item",
+                        "url": "url of the item",
+                        "description": "description of the item"
+                    }
+                ]
+            } 
+        },
+        {
+            "type": "lukbukimagespecial",
+            "image": "http://www.interxion.com/globalassets/global/whats-new/es_http_picture.jpg",
+            "title": "title of image",
+            "description": "description of image",
+            "url": "http://www.elpais.com",
+            "urlbuy": "url to buy"
+        },       
+        {
+            "type": "lukbukconcurso",
+            "image": "http://www.interxion.com/globalassets/global/whats-new/es_http_picture.jpg",
+            "title": "title of image",
+            "description": "description of image",
+            "url": "http://clarin.com.ar",
+            "id": ""
+        }        
+    ]
+}
