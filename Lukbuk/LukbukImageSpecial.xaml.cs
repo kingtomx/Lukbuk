@@ -15,14 +15,15 @@ namespace Lukbuk
 		{
 		}
 
-		public LukbukImageSpecial(String image, String brand)
+		public LukbukImageSpecial(string image, string brand, string imagedescription)
 		{
 			InitializeComponent();	
 			title = this.FindByName<Label>("Name");
 			title.Text = brand;
 			myImage = this.FindByName<Image>("actualImage");
-			myImage.Source = ImageSource.FromFile(image);
+			myImage.Source = ImageSource.FromUri(new Uri(image));
 			description = this.FindByName<Label>("myDescription");
+			description.Text = imagedescription;
 
 		}
 

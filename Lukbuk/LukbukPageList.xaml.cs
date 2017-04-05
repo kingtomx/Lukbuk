@@ -27,17 +27,20 @@ namespace Lukbuk
 			};
 			foreach (JToken item in elements)
 			{
-				if (item["type"].Equals("lukbukimage"))
+
+				string type = (string)item["type"];
+
+				if (type == "lukbukimage")
 				{
-					content.Children.Add(new LukbukImage());
+					content.Children.Add(new LukbukImage((string)item["image"], (string)item["title"], (string)item["description"]));
 				}
-				else if (item["type"].Equals("lukbukimagespecial"))
+				else if (type == "lukbukimagespecial")
 				{
-					content.Children.Add(new LukbukImageSpecial());
+					content.Children.Add(new LukbukImageSpecial((string)item["image"], (string)item["title"], (string)item["description"]));
 				}
 				else
 				{
-					content.Children.Add(new LukbukConcurso());
+					content.Children.Add(new LukbukConcurso((string)item["image"], (string)item["title"], (string)item["description"]));
 				}
 			}
 

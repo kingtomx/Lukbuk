@@ -20,13 +20,7 @@ namespace Lukbuk
 		protected override async void OnAppearing()
 		{
 			IEnumerable response = await Internet.FeedController.Get("http://127.0.0.1/out.json");
-
-			foreach (JToken item in response)
-			{
-				item["binimage"] = await Internet.FeedController.GetImage(item["image"].ToString());
-			}
-
-			App.Current.MainPage = new NavigationPage(new LukbukPageList());
+			App.Current.MainPage = new NavigationPage(new LukbukPageList((List<JToken>)response));
 		}
 
 	}
