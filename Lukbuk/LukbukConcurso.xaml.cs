@@ -14,7 +14,7 @@ namespace Lukbuk
 		{
 		}
 
-		public LukbukConcurso(string image, string brand, string imagedescription)
+		public LukbukConcurso(string image, string brand, string imagedescription, string url)
 		{
 			InitializeComponent();
 			title = this.FindByName<Label>("Name");
@@ -23,6 +23,7 @@ namespace Lukbuk
 			myImage.Source = ImageSource.FromUri(new Uri(image));
 			description = this.FindByName<Label>("myDescription");
 			description.Text = imagedescription;
+
 
 		}
 

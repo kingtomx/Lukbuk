@@ -47,8 +47,10 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Internet\ImageSpecial.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Internet\ImageConcurso.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Share\IShareable.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Internet\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Share\" />
   </ItemGroup>
 </Project>

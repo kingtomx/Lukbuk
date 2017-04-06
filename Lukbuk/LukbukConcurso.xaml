@@ -19,6 +19,7 @@
 				<Image 
 					x:Name="actualImage"
 					BackgroundColor="Black"
+					Source="default.jpg"
 					Margin="4"
 					HorizontalOptions="CenterAndExpand" 
 					VerticalOptions="CenterAndExpand" />

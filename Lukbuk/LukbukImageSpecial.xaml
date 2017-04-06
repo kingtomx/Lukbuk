@@ -19,6 +19,7 @@
 				<Image 
 					x:Name="actualImage"
 					BackgroundColor="Black"
+					Source="default.jpg"
 					Margin="4"
 					HorizontalOptions="CenterAndExpand" 
 					VerticalOptions="CenterAndExpand" />
@@ -43,6 +44,7 @@
 					Orientation="Horizontal"
 					HorizontalOptions="FillAndExpand">
 					<Button 
+						x:Name="share"
 						Image="share.png"
 						VerticalOptions="EndAndExpand"
 						HorizontalOptions="FillAndExpand"
@@ -51,6 +53,7 @@
 						RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=actualImage, Property=Width, Constant=-50}"
 						RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=actualImage, Property=Height, Constant=-45}" />
 					<Button 
+						x:Name="www"
 						Image="www1.png"
 						VerticalOptions="EndAndExpand"
 						HorizontalOptions="FillAndExpand"

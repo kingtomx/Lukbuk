@@ -19,6 +19,7 @@
 				<Image 
 					x:Name="actualImage"
 					BackgroundColor="Black"
+					Source="default.jpg"
 					Margin="4"
 					HorizontalOptions="CenterAndExpand" 
 					VerticalOptions="CenterAndExpand" />
@@ -43,6 +44,7 @@
 					Orientation="Horizontal"
 					HorizontalOptions="FillAndExpand">
 					<Button 
+						x:Name="share"
 						Image="share.png"
 						VerticalOptions="EndAndExpand"
 						HorizontalOptions="FillAndExpand"

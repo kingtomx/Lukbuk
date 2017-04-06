@@ -17,27 +17,20 @@ namespace Lukbuk.Internet
 		public static async Task<IEnumerable> Get(string url)
 		{
 			List<JToken> objects = new List<JToken>();
-
 			String feed = await url.GetStringAsync();
-
 			JObject jobject = JObject.Parse(feed);
-
 			JArray elements = (JArray)jobject["elements"];
-
 			foreach (var item in elements.Children())
 			{
 				objects.Add(item);
 			}
-
 			return objects;
 		}
 
 		public static async Task<byte[]> GetImage(string url)
 		{
 			List<JToken> objects = new List<JToken>();
-
 			byte[] image = await url.GetBytesAsync();
-
 			return image;
 		}
 

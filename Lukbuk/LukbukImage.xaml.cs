@@ -24,6 +24,21 @@ namespace Lukbuk
 			description = this.FindByName<Label>("myDescription");
 			description.Text = imagedescription;
 
+			Button share = this.FindByName<Button>("share");
+			share.Clicked += (sender, e) =>
+			{
+				var sharer = DependencyService.Get<IShareable>();
+				sharer.OpenShareIntent(url);
+
+				Color colorActual = ((Button)sender).BackgroundColor;
+				((Button)sender).BackgroundColor = Color.FromHex("#aabbbbbb");
+				Device.StartTimer(TimeSpan.FromSeconds(0.25), () =>
+				{
+					((Button)sender).BackgroundColor = colorActual;
+					return false;
+				});
+			};
+
 			Button www = this.FindByName<Button>("www");
 			www.Clicked += (sender, e) =>
 			{

@@ -36,11 +36,11 @@ namespace Lukbuk
 				}
 				else if (type == "lukbukimagespecial")
 				{
-					content.Children.Add(new LukbukImageSpecial((string)item["image"], (string)item["title"], (string)item["description"]));
+					content.Children.Add(new LukbukImageSpecial((string)item["image"], (string)item["title"], (string)item["description"], (string)item["url"]));
 				}
 				else
 				{
-					content.Children.Add(new LukbukConcurso((string)item["image"], (string)item["title"], (string)item["description"]));
+					content.Children.Add(new LukbukConcurso((string)item["image"], (string)item["title"], (string)item["description"], (string)item["url"]));
 				}
 			}
 
