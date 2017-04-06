@@ -18,7 +18,7 @@
     <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignKey>iPhone Developer: tomas.pascual.files@gmail.com (SM7DCEUQLF)</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
     <MtouchFastDev>true</MtouchFastDev>
     <MtouchUseSGen>true</MtouchUseSGen>
@@ -29,6 +29,7 @@
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
     <MtouchTlsProvider>Default</MtouchTlsProvider>
     <PlatformTarget>x86</PlatformTarget>
+    <CodesignProvision>8c780570-b00f-4b5a-b6f5-f46c9059a4e2</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>pdbonly</DebugType>
@@ -175,6 +176,7 @@
     <BundleResource Include="Resources\contest1.png" />
     <BundleResource Include="Resources\share.png" />
     <BundleResource Include="Resources\list1.png" />
+    <BundleResource Include="Resources\load.png" />
   </ItemGroup>
   <Import Project="..\Lukbuk\Lukbuk.projitems" Label="Shared" Condition="Exists('..\Lukbuk\Lukbuk.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

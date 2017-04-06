@@ -19,6 +19,12 @@ namespace Lukbuk
 
 			NavigationPage.SetTitleIcon(this, "logo.png");
 
+			ToolbarItems.Add(new ToolbarItem("Menu", "load.png", async () =>
+			{
+				var page = new ContentPage();
+				var result = await page.DisplayAlert("Title", "Message", "Accept", "Cancel");
+			}));
+
 			StackLayout content = new StackLayout()
 			{
 				Orientation = StackOrientation.Vertical,
