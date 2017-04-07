@@ -14,6 +14,10 @@ namespace Lukbuk
 		public LukbukPage()
 		{
 			InitializeComponent();
+
+			//Image backgroundImage = this.FindByName<Image>("background");
+
+
 		}
 
 

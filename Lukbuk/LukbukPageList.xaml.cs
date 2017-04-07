@@ -19,11 +19,11 @@ namespace Lukbuk
 
 			NavigationPage.SetTitleIcon(this, "logo.png");
 
-			ToolbarItems.Add(new ToolbarItem("Menu", "load.png", async () =>
+			ToolbarItems.Add(new ToolbarItem("Menu", "load.png", () =>
 			{
-				var page = new ContentPage();
-				var result = await page.DisplayAlert("Title", "Message", "Accept", "Cancel");
+				App.Current.MainPage = new NavigationPage(new LukbukPage());
 			}));
+
 
 			StackLayout content = new StackLayout()
 			{

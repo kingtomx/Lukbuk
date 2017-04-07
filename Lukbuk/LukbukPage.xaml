@@ -3,10 +3,23 @@
 	xmlns="http://xamarin.com/schemas/2014/forms" 
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 	x:Class="Lukbuk.LukbukPage">
-	<ActivityIndicator
-		HorizontalOptions="FillAndExpand"
-		VerticalOptions="FillAndExpand"
-		IsVisible="true" 
-		IsRunning="true">
-	</ActivityIndicator>
+
+	<RelativeLayout>
+	    <Image x:Name="background"
+			   Source="background.jpg"
+			   RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+	           RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+			   Aspect="Fill"/>
+	    <Grid RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+	             RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
+		<ActivityIndicator
+			HorizontalOptions="FillAndExpand"
+			VerticalOptions="FillAndExpand"
+			IsVisible="true" 
+			IsRunning="true">
+		</ActivityIndicator>
+			
+	    </Grid>
+	  </RelativeLayout>
+	
 </ContentPage>
