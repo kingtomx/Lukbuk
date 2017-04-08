@@ -29,13 +29,31 @@
             "description": "La tendencia la inauguró Kendall Jenner y enseguida se sumaron otras Insta-girls y supermodelos, entre ellas la brasileña Sara Sampaio. Se puede llevar a la vista, con una camisa abierta, por debajo de un top transparente o con una pieza-top de lencería por encima de una camiseta blanca.",
             "url": "http://www.delaostia.net/lookbook/",
             "urlbuy": "http://www.delaostia.net/shop/"
-        },       
+        },   
+        {
+            "type": "lukbukimage",
+            "image": "http://www.inversa.com.ar/media/wysiwyg/lookbook/Inversa-Lookbook-Otono-Inverno-Autumn-Winter-2017-5.jpg",
+            "title": "Inversa invierno 2017",
+            "description": "Remera Cardiff, Jean Amsterdam, Sweater Fun people, Collar Barker",
+            "url": {
+                "general": "http://www.inversa.com.ar/lookbook/",
+                "items": [
+                    {
+                        "name": "name of the item",
+                        "price": "price of the item",
+                        "currency": "currency of the item",
+                        "url": "url of the item",
+                        "description": "description of the item"
+                    }
+                ]
+            } 
+        },        
         {
             "type": "lukbukconcurso",
-            "image": "http://4.bp.blogspot.com/-dK8oYKEj42E/Vb_k9tkyuUI/AAAAAAAAZfQ/EOZEXHeOMCM/s1600/11828787_10153530295652156_7931306924229478787_n.jpg",
-            "title": "Rapsodia 2017",
+            "image": "http://www.ossira.com/oto_inv_2017/uploads/banners/20170301-020110.jpg",
+            "title": "Concurso Ossira invierno 2017",
             "description": "La tendencia la inauguró Kendall Jenner y enseguida se sumaron otras Insta-girls y supermodelos, entre ellas la brasileña Sara Sampaio. Se puede llevar a la vista, con una camisa abierta, por debajo de un top transparente o con una pieza-top de lencería por encima de una camiseta blanca.",
-            "url": "http://www.rapsodia.com.ar",
+            "url": "http://www.ossira.com/oto_inv_2017/",
             "id": ""
         }        
     ]
