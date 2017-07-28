@@ -1,12 +1,11 @@
 {
-
     "version": "1.0",
     "datetime": "1491312636",
     "api": "lukbukfeed",
     "elements": [
         {
             "type": "lukbukimage",
-            "image": "https://www.vitamina.com.ar/skin/frontend/default/vitamina/images/lookbook/final/1-GORRO-GORRITI-ABRIGO-MALDONADO-POLERON-SOLANAS-PANTALON-MONTEVIDEO-BANDOLERA-SARAND-BOTA-ATLNTIDA.jpg",
+            "image": "http://images.totalbeauty.com/uploads/editorial/lg/natural-beauty-products-L.jpg",
             "title": "Vitamina invierno 2017",
             "description": "GORRO GORRITI, ABRIGO MALDONADO, POLERON SOLANAS, PANTALON MONTEVIDEO, BANDOLERA SARANDI Y BOTA ATLANTIDA",
             "url": {
@@ -20,7 +19,7 @@
                         "description": "description of the item"
                     }
                 ]
-            } 
+            }
         },
         {
             "type": "lukbukimagespecial",
@@ -29,7 +28,7 @@
             "description": "La tendencia la inauguró Kendall Jenner y enseguida se sumaron otras Insta-girls y supermodelos, entre ellas la brasileña Sara Sampaio. Se puede llevar a la vista, con una camisa abierta, por debajo de un top transparente o con una pieza-top de lencería por encima de una camiseta blanca.",
             "url": "http://www.delaostia.net/lookbook/",
             "urlbuy": "http://www.delaostia.net/shop/"
-        },   
+        },
         {
             "type": "lukbukimage",
             "image": "http://www.inversa.com.ar/media/wysiwyg/lookbook/Inversa-Lookbook-Otono-Inverno-Autumn-Winter-2017-5.jpg",
@@ -46,8 +45,8 @@
                         "description": "description of the item"
                     }
                 ]
-            } 
-        },        
+            }
+        },
         {
             "type": "lukbukconcurso",
             "image": "http://www.ossira.com/oto_inv_2017/uploads/banners/20170301-020110.jpg",
@@ -55,6 +54,6 @@
             "description": "La tendencia la inauguró Kendall Jenner y enseguida se sumaron otras Insta-girls y supermodelos, entre ellas la brasileña Sara Sampaio. Se puede llevar a la vista, con una camisa abierta, por debajo de un top transparente o con una pieza-top de lencería por encima de una camiseta blanca.",
             "url": "http://www.ossira.com/oto_inv_2017/",
             "id": ""
-        }        
+        }
     ]
 }
