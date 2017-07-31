@@ -8,18 +8,7 @@
             "image": "http://images.totalbeauty.com/uploads/editorial/lg/natural-beauty-products-L.jpg",
             "title": "Productos TotalBeauty 2017",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque ex eu ex aliquam maximus. Donec et rutrum ipsum. Curabitur tristique, metus in iaculis rhoncus, ante ex euismod enim, in aliquam arcu tortor ut lectus. Curabitur ultricies diam sem, semper posuere magna feugiat rhoncus",
-            "url": {
-                "general": "https://www.vitamina.com.ar/lookbook-oi17",
-                "items": [
-                    {
-                        "name": "name of the item",
-                        "price": "price of the item",
-                        "currency": "currency of the item",
-                        "url": "url of the item",
-                        "description": "description of the item"
-                    }
-                ]
-            }
+            "url": "https://www.vitamina.com.ar/lookbook-oi17"
         },
         {
             "type": "lukbukimagespecial",
@@ -34,18 +23,7 @@
             "image": "https://cdn.dribbble.com/users/6251/screenshots/2179954/jules-esther-skincare-packaging-design-chicago2.jpg",
             "title": "Jules Esther Skincare",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque ex eu ex aliquam maximus. Donec et rutrum ipsum. Curabitur tristique, metus in iaculis rhoncus, ante ex euismod enim, in aliquam arcu tortor ut lectus. Curabitur ultricies diam sem, semper posuere magna feugiat rhoncus",
-            "url": {
-                "general": "http://www.inversa.com.ar/lookbook/",
-                "items": [
-                    {
-                        "name": "name of the item",
-                        "price": "price of the item",
-                        "currency": "currency of the item",
-                        "url": "url of the item",
-                        "description": "description of the item"
-                    }
-                ]
-            }
+            "url": "http://www.inversa.com.ar/lookbook/"
         },
         {
             "type": "lukbukconcurso",
